@@ -911,6 +911,7 @@ static void dasher_main_command_quit(DasherMain *pSelf) {
 
   GtkWidget *pDialogue = NULL;
   dasher_main_save_state(pSelf);
+
   if (!pPrivate->pAppSettings->GetBool(APP_BP_CONFIRM_UNSAVED)) {
     gtk_main_quit();
     return;
